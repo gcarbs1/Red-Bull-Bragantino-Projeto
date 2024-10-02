@@ -44,8 +44,8 @@ st.markdown(
         border-left: 5px solid #ff0000;  /* Borda vermelha */
     }
     
-    .stAlert p, .stAlert a {
-        color: black !important;  /* Forçar texto e links dentro do bloco em preto */
+    .stAlert p, .stAlert a, .stAlert strong {
+        color: black !important;  /* Forçar texto, links e textos em negrito para preto */
     }
     </style>
     """,
