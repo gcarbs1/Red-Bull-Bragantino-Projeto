@@ -1,3 +1,16 @@
+st.markdown(
+    """
+    <style>
+    .stAlert {
+        background-color: #f0f0f5; /* Define a cor de fundo */
+        color: #333333; /* Define a cor do texto */
+        border-radius: 5px;
+        padding: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 # Definir as páginas para o projeto "Ferramentas para o Futebol"
