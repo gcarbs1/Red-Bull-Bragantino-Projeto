@@ -1,18 +1,6 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
-# Adicionar o CSS para alterar a cor da barra lateral
-st.markdown(
-    """
-    <style>
-        .css-1aumxhk {
-            background-color: #af1e1e;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 show_pages(
     [   
         Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
