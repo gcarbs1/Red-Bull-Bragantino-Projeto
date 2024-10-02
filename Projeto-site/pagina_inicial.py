@@ -1,3 +1,5 @@
+import streamlit as st
+from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 st.markdown(
     """
     <style>
@@ -11,9 +13,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-import streamlit as st
-from st_pages import Page, Section, show_pages, add_page_title, hide_pages
-# Definir as páginas para o projeto "Ferramentas para o Futebol"
 show_pages(
     [   
         Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
