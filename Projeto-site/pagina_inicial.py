@@ -12,6 +12,15 @@ show_pages(
     ]
 )
 
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:50%;">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Adicionar logo na barra lateral
 st.sidebar.markdown(
     """
