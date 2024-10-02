@@ -43,6 +43,10 @@ st.markdown(
         color: black !important;  /* Texto preto */
         border-left: 5px solid #ff0000;  /* Borda vermelha */
     }
+    
+    .stAlert p, .stAlert a {
+        color: black !important;  /* Forçar texto e links dentro do bloco em preto */
+    }
     </style>
     """,
     unsafe_allow_html=True
