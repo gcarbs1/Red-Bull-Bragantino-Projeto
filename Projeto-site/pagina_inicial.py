@@ -44,16 +44,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-st.markdown(
-    """
-    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black;">
-        Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
 st.markdown("---")
 
 st.markdown(""" 
