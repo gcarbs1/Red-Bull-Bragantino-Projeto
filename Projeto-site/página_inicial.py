@@ -6,13 +6,16 @@ add_page_title()
 # Definir as páginas para o projeto "Ferramentas para o Futebol"
 show_pages(
     [   
-        Page("ferramenta/pag_inicial.py", "⚙️  Ferramentas para Análise de Jogadores no futebol"),
+        Page("ferramenta/página_inicial.py", "Teste de caso: Red Bull Bragantino ⚽"),
         Page("ferramenta/similaridade_jogadores.py", "Similaridade de Jogadores", "📊", in_section=True),
         Page("ferramenta/similaridade_multiplos_jogadores.py", "Similaridade de Múltiplos Jogadores", "🧮", in_section=True),
         Page("ferramenta/classificacao_jogadores.py", "Classificação de Jogadores", "🏆", in_section=True),
         Page("ferramenta/dados.py", "Dados", icon="💾", in_section=False),
     ]
 )
+
+# Adicionar logo
+st.image("https://github.com/gcarbs1/Red-Bull-Bragantino-Projeto/blob/main/Dados/RedBullBragantino.png")
 
 # Informações de contato destacadas
 st.info("""
