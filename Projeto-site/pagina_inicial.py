@@ -1,6 +1,26 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
+# Função para adicionar um estilo de linha tracejada em vermelho após cada item
+st.markdown(
+    """
+    <style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    li {
+        padding: 10px 0;
+        border-bottom: 2px dashed #af1e1e; /* Linha tracejada em vermelho */
+    }
+    li:last-child {
+        border-bottom: none; /* Remover a linha da última opção */
+    }
+    </style>
+    """, 
+    unsafe_allow_html=True
+)
+
 show_pages(
     [   
         Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
@@ -71,4 +91,3 @@ footer {visibility: hidden;}
 </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
