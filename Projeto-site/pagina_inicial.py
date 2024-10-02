@@ -34,14 +34,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Definir o CSS para alterar o fundo dos blocos de informação para vermelho e a fonte para preto
+# Definir o CSS global para padronizar todos os blocos de alerta (info, warning, etc.)
 st.markdown(
     """
     <style>
-    .stAlert {
-        background-color: #ffcccc;
-        border-left: 5px solid #ff0000;
-        color: black;  /* Define a cor da fonte como preta */
+    .stAlert, .st-info, .st-error, .st-warning, .st-success {
+        background-color: #ffcccc !important;  /* Fundo vermelho claro */
+        color: black !important;  /* Texto preto */
+        border-left: 5px solid #ff0000;  /* Borda vermelha */
     }
     </style>
     """,
