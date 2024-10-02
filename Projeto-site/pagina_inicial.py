@@ -12,7 +12,6 @@ show_pages(
     ]
 )
 
-
 # Adicionar logo na barra lateral
 st.sidebar.markdown(
     """
@@ -35,26 +34,31 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Informações de contato destacadas em vermelho
+# Definir o CSS para alterar o fundo dos blocos de informação para vermelho
 st.markdown(
     """
     <style>
-    .info-red {
-        color: red;
-        font-weight: bold;
+    .stAlert {
+        background-color: #ffcccc;
+        border-left: 5px solid #ff0000;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.markdown('<p class="info-red">- <b>Autor</b>: Gabriel Carbinatto<br>- <b>Email</b>: <a href="mailto:gabrielcarbinatto@usp.br">gabrielcarbinatto@usp.br</a><br>- <b>LinkedIn</b>: <a href="https://www.linkedin.com/in/gabriel-carbinatto/">Gabriel Carbinatto</a></p>', unsafe_allow_html=True)
+# Informações de contato destacadas
+st.info(""" 
+- **Autor**: Gabriel Carbinatto  
+- **Email**: [gabrielcarbinatto@usp.br](mailto:gabrielcarbinatto@usp.br)  
+- **LinkedIn**: [Gabriel Carbinatto](https://www.linkedin.com/in/gabriel-carbinatto/)  
+""")
 
-st.markdown('<p class="info-red">Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.</p>', unsafe_allow_html=True)
+st.info("Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.")
 
 st.markdown("---")
 
-st.markdown("""
+st.markdown(""" 
 ### 📋 Sobre as ferramentas
 
 - ⚙️ **Similaridade de Jogadores**: Compare a performance entre jogadores com base em métricas estatísticas detalhadas.
