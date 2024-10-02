@@ -1,7 +1,7 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
-# Função para adicionar um estilo de linha tracejada em vermelho após cada item
+# Função para adicionar um estilo de linha reta em vermelho após cada item
 st.markdown(
     """
     <style>
@@ -11,10 +11,17 @@ st.markdown(
     }
     li {
         padding: 10px 0;
-        border-bottom: 2px dashed #af1e1e; /* Linha tracejada em vermelho */
+        border-bottom: 2px solid #af1e1e; /* Linha reta em vermelho */
     }
     li:last-child {
         border-bottom: none; /* Remover a linha da última opção */
+    }
+    .sidebar .block-container {
+        padding-top: 0px; /* Remover padding no topo da barra lateral */
+        padding-bottom: 0px; /* Remover padding no final da barra lateral */
+    }
+    .sidebar .element-container {
+        margin-bottom: 0px; /* Remover margem extra abaixo dos elementos */
     }
     </style>
     """, 
@@ -31,11 +38,11 @@ show_pages(
     ]
 )
 
-# Adicionar logo na barra lateral
+# Adicionar logo na barra lateral diretamente abaixo das opções
 st.sidebar.markdown(
     """
     <div style="text-align: center;">
-        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:70%;">
+        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:70%; margin-top: 20px;">
     </div>
     """,
     unsafe_allow_html=True
@@ -44,19 +51,10 @@ st.sidebar.markdown(
 # Adicionar o título à página principal
 add_page_title()
 
+# Adicionar informações de contato destacadas com estilo customizado
 st.markdown(
     """
-    <div style="text-align: center; margin-bottom: 30px;"> <!-- Adiciona o espaçamento entre a imagem e o st info -->
-        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:50%;">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-# Informações de contato destacadas (com estilo customizado e contorno)
-st.markdown(
-    """
-    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black; border: 2px solid #af1e1e;"> <!-- Contorno na cor #af1e1e -->
+    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black; border: 2px solid #af1e1e;">
         <strong>Autor</strong>: Gabriel Carbinatto<br>
         <strong>Email</strong>: <a href="mailto:gabrielcarbinatto@usp.br" style="color: black;">gabrielcarbinatto@usp.br</a><br>
         <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gabriel-carbinatto/" style="color: black;">Gabriel Carbinatto</a>
