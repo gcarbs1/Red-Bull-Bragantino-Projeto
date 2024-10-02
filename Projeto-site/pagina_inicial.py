@@ -36,7 +36,7 @@ st.markdown(
 # Informações de contato destacadas (com estilo customizado)
 st.markdown(
     """
-    <div style="background-color: red; padding: 10px; border-radius: 5px; color: black;">
+    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black;">
         <strong>Autor</strong>: Gabriel Carbinatto<br>
         <strong>Email</strong>: <a href="mailto:gabrielcarbinatto@usp.br" style="color: black;">gabrielcarbinatto@usp.br</a><br>
         <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gabriel-carbinatto/" style="color: black;">Gabriel Carbinatto</a>
@@ -47,7 +47,7 @@ st.markdown(
 
 st.markdown(
     """
-    <div style="background-color: red; padding: 10px; border-radius: 5px; color: black;">
+    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black;">
         Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.
     </div>
     """,
