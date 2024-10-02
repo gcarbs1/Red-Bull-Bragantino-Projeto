@@ -34,20 +34,10 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Definir o CSS global para padronizar todos os blocos de alerta (info, warning, etc.)
+# Incluir o CSS externo a partir do GitHub
 st.markdown(
     """
-    <style>
-    .stAlert, .st-info, .st-error, .st-warning, .st-success {
-        background-color: #ffcccc !important;  /* Fundo vermelho claro */
-        color: black !important;  /* Texto preto */
-        border-left: 5px solid #ff0000;  /* Borda vermelha */
-    }
-    
-    .stAlert p, .stAlert a, .stAlert strong {
-        color: black !important;  /* Forçar texto, links e textos em negrito para preto */
-    }
-    </style>
+    <link href="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Projeto-site/style/style.css" rel="stylesheet">
     """,
     unsafe_allow_html=True
 )
