@@ -14,8 +14,8 @@ input[type=text], input[type=email], textarea {
   }
   
   button[type=submit] {
-    background-color: #af1e2a;
-    color: #fca9a9;
+    background-color: #af1e1e;
+    color: #fedbdb;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
