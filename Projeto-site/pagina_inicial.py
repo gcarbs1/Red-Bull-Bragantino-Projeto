@@ -1,5 +1,6 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
+
 show_pages(
     [   
         Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
@@ -32,14 +33,26 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Informações de contato destacadas
-st.info(""" 
-- **Autor**: Gabriel Carbinatto  
-- **Email**: [gabrielcarbinatto@usp.br](mailto:gabrielcarbinatto@usp.br)  
-- **LinkedIn**: [Gabriel Carbinatto](https://www.linkedin.com/in/gabriel-carbinatto/)  
-""")
+# Informações de contato destacadas (com estilo customizado)
+st.markdown(
+    """
+    <div style="background-color: red; padding: 10px; border-radius: 5px; color: black;">
+        <strong>Autor</strong>: Gabriel Carbinatto<br>
+        <strong>Email</strong>: <a href="mailto:gabrielcarbinatto@usp.br" style="color: black;">gabrielcarbinatto@usp.br</a><br>
+        <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gabriel-carbinatto/" style="color: black;">Gabriel Carbinatto</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-st.info("Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.")
+st.markdown(
+    """
+    <div style="background-color: red; padding: 10px; border-radius: 5px; color: black;">
+        Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
