@@ -1,65 +1,30 @@
 import streamlit as st
+from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
-# Inserir o CSS diretamente no código usando st.markdown
-st.markdown("""
-    <style>
-    /* Estilos para o bloco de informações */
-    .info-box {
-        background-color: #f0f8ff;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 15px;
-        font-size: 16px;
-        color: #333;
-    }
-    .info-header {
-        font-size: 20px;
-        font-weight: bold;
-        color: #000;
-    }
-    /* Estilos para botões */
-    button[type=submit] {
-        background-color: #af1e1e;
-        color: #fedbdb;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        margin-top: 1.5rem;
-    }
+add_page_title()
 
-    button[type=submit]:hover {
-        background-color: #d81d1d;
-    }
+# Definir as páginas para o projeto "Ferramentas para o Futebol"
+show_pages(
+    [   
+        Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino ⚽"),
+        Page("Projeto-site/similaridade_jogadores.py", "Similaridade de Jogadores", "📊", in_section=True),
+        Page("Projeto-site/similaridade_multiplos_jogadores.py", "Similaridade de Múltiplos Jogadores", "🧮", in_section=True),
+        Page("Projeto-site/classificacao_jogadores.py", "Classificação de Jogadores", "🏆", in_section=True),
+        Page("Projeto-site/dados.py", "Dados", icon="💾", in_section=False),
+    ]
+)
 
-    /* Estilo para imagens */
-    .centered-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# Adicionar logo com estilo centralizado
+# Adicionar logo
 st.image("https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png")
 
-# Adicionar o bloco de informações com o estilo personalizado
-st.markdown("""
-<div class="info-box">
-    <p class="info-header">Autor: Gabriel Carbinatto</p>
-    <p>Email: <a href="mailto:gabrielcarbinatto@usp.br">gabrielcarbinatto@usp.br</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-carbinatto/">Gabriel Carbinatto</a></p>
-</div>
-""", unsafe_allow_html=True)
+# Informações de contato destacadas
+st.info("""
+- **Autor**: Gabriel Carbinatto  
+- **Email**: [gabrielcarbinatto@usp.br](mailto:gabrielcarbinatto@usp.br)  
+- **LinkedIn**: [Gabriel Carbinatto](https://www.linkedin.com/in/gabriel-carbinatto/)  
+""")
 
-# Outro bloco de informações
-st.markdown("""
-<div class="info-box">
-    Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.
-</div>
-""", unsafe_allow_html=True)
+st.info("Projeto com ferramentas para análise de desempenho no futebol, incluindo métricas de similaridade entre jogadores, classificação e posteriormente irei implementar algo relacionado a visualização de dados.")
 
 st.markdown("---")
 
