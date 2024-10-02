@@ -1,6 +1,6 @@
-requests==2.27.1
-streamlit==1.28.0
-streamlit_book==0.7.5
+requests
+streamlit
+streamlit_book
 st-pages
 pandas
 numpy
