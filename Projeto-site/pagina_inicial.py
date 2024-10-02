@@ -1,8 +1,6 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
-add_page_title()
-
 # Definir as páginas para o projeto "Ferramentas para o Futebol"
 show_pages(
     [   
@@ -14,15 +12,19 @@ show_pages(
     ]
 )
 
-# Adicionar logo
-st.markdown(
+# Adicionar logo na barra lateral
+st.sidebar.markdown(
     """
     <div style="text-align: center;">
-        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:50%;">
+        <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:70%;">
     </div>
     """,
     unsafe_allow_html=True
 )
+
+# Adicionar o título à página principal
+add_page_title()
+
 # Informações de contato destacadas
 st.info("""
 - **Autor**: Gabriel Carbinatto  
@@ -48,7 +50,6 @@ Para tirar o máximo proveito das ferramentas, é recomendado ter conhecimentos 
 ### 👨‍🏫 Contato
 
 Caso tenha dúvidas ou sugestões, entre em contato comigo por email ou LinkedIn.
-   
 """, unsafe_allow_html=True)
 
 # Esconder o menu e o rodapé padrão do Streamlit
@@ -58,5 +59,4 @@ hide_streamlit_style = """
 footer {visibility: hidden;}
 </style>
 """
-
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
