@@ -34,14 +34,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Incluir o CSS externo a partir do GitHub
-st.markdown(
-    """
-    <link href="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Projeto-site/style/style.css" rel="stylesheet">
-    """,
-    unsafe_allow_html=True
-)
-
 # Informações de contato destacadas
 st.info(""" 
 - **Autor**: Gabriel Carbinatto  
