@@ -1,5 +1,40 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
+st.markdown(
+    """
+    <style>
+    input[type=text], input[type=email], textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    textarea {
+        height: 12rem;
+    }
+
+    button[type=submit] {
+        background-color: #af1e1e;
+        color: #fedbb9;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 1.5rem;
+    }
+
+    button[type=submit]:hover {
+        background-color: #d81d1d;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Definir as páginas para o projeto "Ferramentas para o Futebol"
 show_pages(
