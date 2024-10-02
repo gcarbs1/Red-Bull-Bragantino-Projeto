@@ -1,18 +1,5 @@
 import streamlit as st
 from st_pages import Page, Section, show_pages, add_page_title, hide_pages
-st.markdown(
-    """
-    <style>
-    .stAlert {
-        background-color: #f0f0f5; /* Define a cor de fundo */
-        color: #333333; /* Define a cor do texto */
-        border-radius: 5px;
-        padding: 10px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 show_pages(
     [   
         Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
