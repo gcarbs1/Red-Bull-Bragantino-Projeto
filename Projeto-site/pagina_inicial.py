@@ -26,17 +26,17 @@ add_page_title()
 
 st.markdown(
     """
-    <div style="text-align: center;">
+    <div style="text-align: center; margin-bottom: 30px;"> <!-- Adiciona o espaçamento entre a imagem e o st info -->
         <img src="https://raw.githubusercontent.com/gcarbs1/Red-Bull-Bragantino-Projeto/main/Dados/RedBullBragantino.png" alt="Imagem do Red Bull Bragantino" style="width:50%;">
     </div>
     """,
     unsafe_allow_html=True
 )
 
-# Informações de contato destacadas (com estilo customizado)
+# Informações de contato destacadas (com estilo customizado e contorno)
 st.markdown(
     """
-    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black;">
+    <div style="background-color: #e86868; padding: 10px; border-radius: 5px; color: black; border: 2px solid #af1e1e;"> <!-- Contorno na cor #af1e1e -->
         <strong>Autor</strong>: Gabriel Carbinatto<br>
         <strong>Email</strong>: <a href="mailto:gabrielcarbinatto@usp.br" style="color: black;">gabrielcarbinatto@usp.br</a><br>
         <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/gabriel-carbinatto/" style="color: black;">Gabriel Carbinatto</a>
@@ -44,6 +44,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 st.markdown("---")
 
 st.markdown(""" 
@@ -70,3 +71,4 @@ footer {visibility: hidden;}
 </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
