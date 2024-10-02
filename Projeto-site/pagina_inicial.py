@@ -6,7 +6,7 @@ add_page_title()
 # Definir as páginas para o projeto "Ferramentas para o Futebol"
 show_pages(
     [   
-        Page("Projeto-site/pagina_inicial.py", "⚽ Teste de caso: Red Bull Bragantino"),
+        Page("Projeto-site/pagina_inicial.py", "Teste de caso: Red Bull Bragantino"),
         Page("Projeto-site/similaridade_jogadores.py", "Similaridade de Jogadores", "📊", in_section=True),
         Page("Projeto-site/similaridade_multiplos_jogadores.py", "Similaridade de Múltiplos Jogadores", "🧮", in_section=True),
         Page("Projeto-site/classificacao_jogadores.py", "Classificação de Jogadores", "🏆", in_section=True),
